@@ -4,7 +4,7 @@ for i in range(12):
 for i in range(3, 12):
     print(i)
 
-for i in range(3, 12, 2):
+for i in range(2, 100, 2):
     print(i)
 
 for c in "Ala ma kota":
