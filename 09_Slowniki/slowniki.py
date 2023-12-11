@@ -1,3 +1,50 @@
+- Dla listy napisów pobranej w pętli z wejścia wypisać słownik ilości wystąpień napisów
+  - np. dla `['Ala', 'ma' 'kota', 'kota']` wypisać `{'Ala': 1, 'ma': 1, ;'kota': 2}`
+- Dla wczytanej liczby z wejścia z zakresu 1-999 wypisać jej postać słowną
+  - np. dla `73` wypisać `siedemdziesiąt trzy`
+
+
+dluga_lista_sort(key=lst)
+
+s = {}
+
+while True:
+    wpis = input("opisz coś")
+    if wpis == "":
+        break
+    print(slow)
+    n = s.slow.get (wpis, 0)
+    n += 1
+    s[wpis] = n
+
+
+
+while True:
+
+    wpis = input("Wpisz coś")
+    if wpis == "":
+        break
+    # slow.get (wpis)
+    n = slow.get (wpis,0)
+    n += 1
+    slow[wpis] = n
+
+print (slow)
+
+lista_sort(key=lst)
+
+print(lista)
+
+
+lista = []
+
+- Dla wczytanej liczby z wejścia z zakresu 1-999 wypisać jej postać słowną
+  - np. dla `73` wypisać `siedemdziesiąt trzy`
+
+
+s = {"a": 1, 'b': 2}
+s
+
 s = {"a": 1, 'b': 2}
 s
 s = {1: "a", 2: 'b'}
@@ -19,6 +66,8 @@ s
 
 s = {"a": 1, 'b': 2, 'c': 3}
 
+
+
 for k in s.keys():
     print(k)
 
@@ -33,6 +82,30 @@ for k, v in s.items():
 
 nazwy_jednosci = {0: "", 1: "jeden", 2: "dwa", 3: "trzy", 4: "cztery", 5: "pięć", 6: "sześć", 7: "siedem", 8: "osiem",
                   9: "dziewięć"}
+nastki = {0: "", 11: "jedenaście", 12: "dwanaście", 13: "trzynaście", 14:"czternaście", 15:"pietnascie", 16:"szesnaście",
+          17: "siedemnascie", 18:"osiemnaście", 19:"dziewietnascie"}
+dziesiatki = {0: "", 10: "dziesięć", 20: "dwadzieścia", 30: "trzydzieści",
+                   40: "czterdzieści", 50: "pięćdziesiąt", 60: "sześćdziesiąt", 70: "siedemdziesiąt", 80: "osiemdziesiąt",
+                 90: "dziewięćdziesiąt"}
+setki = {0: "", 100: "sto", 200: "dwiescie", 300: "trzysta",
+                   400: "czterysta", 500: "piecset", 600: "szescset", 700: "siedemset",
+         800: "osiemset", 900: "dziewiecset"}
+slownik = {}
+
+n = int(input("wpisz liczbe:"))
+napis = setki[n-n%100]
+n%= 100
+if n in range (11, 20):
+    napis += nastki[n]
+else:
+    napis += dziesiatki[n-n%10] + " " + nazwy_jednosci[n%10]
+
+print(napis)
+
+
+
+
+
 nazwy_jednosci.get(7, 'tej liczby nie znam')
 
 n = 3
@@ -41,7 +114,7 @@ if n == 1:
 elif n == 2:
     print('dwa')
 elif n == 3:
-    print('trzy')
+    print('trzy')""
 elif n == 4:
     print('cztery')
 elif n == 5:
@@ -58,3 +131,6 @@ s
 'a' in s
 
 s = {1: "a", 2: 'b', "ala": [3, 4]}
+
+for k in s.items():
+    print(k)

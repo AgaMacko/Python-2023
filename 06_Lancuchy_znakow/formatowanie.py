@@ -1,8 +1,8 @@
-s = 'Ala ma {0} kotów'.format(5)
+s = 'Ala ma {0} kotów'.format(10)
 s
 
 'Ala ma ' + str(5) + ' kotów'
-
+s
 s = 'Ala ma {0} kot{1}'.format(5, 'ów')
 s
 
@@ -12,7 +12,7 @@ s
 f'Pi to jest mniej więcej {3.1415926:.3}'
 
 for i in range(12):
-    print(f'{i:2}')
+    print(f'{i:1}')
 
 for i in range(12):
     print(f'{i:02}')
@@ -32,3 +32,19 @@ f'{pi:^30.2f}'
 f'{"-"*10}HELLO{"-"*10}'
 f'{"HELLO":-^25s}'
 
+
+n = int(input("wysokość choinki"))
+for i in range (n):
+    print(f'{" "*(n-i)}{"*"*(2*i+1)}')
+for i in range (n):
+    if i == 2:
+        break
+    print(f'{" "*(n-i)}{"*"*(2*i+1)}')
+
+
+f'{" "*10}*{" "*10}'
+f'{" "*9}***{" "*9}'
+
+
+for i in range(2, 100, 2):
+    print(i)
